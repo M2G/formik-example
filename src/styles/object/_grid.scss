@@ -1,0 +1,30 @@
+// ==========================================================================
+// GRID
+// ==========================================================================
+
+.o-grid {
+  @include clearfix();
+  @include make-container();
+  @include bp(small) {
+    padding-top: $grid-gutter-width/2;
+  }
+
+  position: relative;
+
+  max-width: map-get($_layout-grid, width);
+
+  &.u-no-width {
+    max-width: none !important;
+  }
+}
+
+.o-grid__row
+{
+    @include make-row();
+
+    & &
+    {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}

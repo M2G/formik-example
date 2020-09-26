@@ -1,0 +1,42 @@
+// ==========================================================================
+// HEAD
+// ==========================================================================
+
+.o-head {
+  @include clearfix();
+
+  font-size: 1em;
+
+  &__surtitle {
+    font-family: $_base-font-family-headings;
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 1;
+
+    display: inline-block;
+
+    margin-right: .15em;
+
+    text-transform: uppercase;
+
+    color: inherit;
+  }
+
+  &__title {
+    font-family: $_base-font-family-headings;
+    font-weight: bold;
+
+    display: inline;
+
+    margin-top: 0;
+    margin-bottom: .5em;
+
+    transition: $_transition-default;
+
+    color: $_base-font-color;
+
+    a {
+      color: $_base-font-color;
+    }
+  }
+}

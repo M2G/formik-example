@@ -1,0 +1,89 @@
+// ==========================================================================
+// LOGIN
+// ==========================================================================
+
+.c-modal[id='login'] {
+  .c-modal__content {
+    color: white;
+    background-color: $_color-grey-dark;
+
+    .c-forms__item input {
+      color: $_color-grey-dark;
+    }
+
+    input[type='submit'] {
+      color: $_color-white;
+    }
+  }
+}
+
+.c-login {
+  @include bp(small) {
+    text-align: left;
+    form {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+  padding: 0;
+
+  text-align: center;
+
+  &__block {
+    text-align: center;
+  }
+
+  &__block--lower {
+    padding-top: 2rem;
+
+    @include bp(small) {
+      padding-top: 0;
+    }
+  }
+
+  &__tools {
+    text-align: left;
+
+
+    &__item {
+      display: inline-block;
+
+      margin-right: 1em;
+      margin-bottom: .25em;
+
+      &.c-forms__checkbox {
+        display: block;
+      }
+
+      span {
+        display: inline-block;
+
+        margin-right: .25em;
+      }
+    }
+  }
+
+  &__footer {
+    margin-top: 2em;
+    padding-top: 2em;
+
+    text-align: center;
+
+    border-top: 1px solid lighten($_color-grey-dark, 7%);
+
+    .c-forms__item {
+      text-align: center;
+    }
+  }
+}
+
+.c-login,
+.c-login__footer {
+  [class*='o-col'] {
+    @include bp(small) {
+      float: left;
+    }
+
+    float: none;
+  }
+}

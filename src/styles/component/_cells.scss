@@ -1,0 +1,49 @@
+// ==========================================================================
+// CELL
+// ==========================================================================
+
+$_base-cell-size: .65em;
+
+[class*='o-cell'] {
+  @include bp(small) {
+    padding-bottom: _rem(map-get($_layout-grid, gutters));
+
+    border-bottom: 0;
+  }
+
+  position: relative;
+
+  height: 100%;
+
+  border-bottom: 1px solid $_color-grey-dark;
+}
+
+// Extra small size
+.o-cell--one {
+  @include bp(large) {
+    font-size: .9em;
+  }
+  @include bp(large) {
+    font-size: .85em;
+  }
+}
+
+// Small size
+.o-cell--two {
+  @include bp(large) {
+    font-size: .9em;
+  }
+  @include bp(small) {
+    font-size: 1.25em;
+  }
+}
+
+// Medium size
+.o-cell--three {
+  @include bp(large) {
+    font-size: .9em;
+  }
+  @include bp(small) {
+    font-size: 1.75em;
+  }
+}

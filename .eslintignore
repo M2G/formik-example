@@ -1,0 +1,8 @@
+/node_modules
+/dist
+/build
+/config
+/src/serviceWorker.ts
+/src/defaultProps.ts
+/src/types.ts
+/stories

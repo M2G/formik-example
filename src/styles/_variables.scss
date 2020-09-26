@@ -1,0 +1,286 @@
+// ==========================================================================
+// VARIABLES
+// ==========================================================================
+
+// Color swatch
+
+$_color-red: #ff003c !default;
+$_color-purple: #fa2dc8 !default;
+$_color-blue-light: #1a8cff !default;
+$_color-orange: #ffa31a !default;
+$_color-coral: #ff552d !default;
+$_color-green: #a0d521 !default;
+$_color-blue: #216790 !default;
+$_color-jade: #00b386 !default;
+$_color-golden: #e6d600 !default;
+$_color-yellow: #f0d700 !default;
+$_color-dark-orchid: #992caa !default;
+$_color-pink: #ff4d76 !default;
+$_color-acid: #c7d400 !default;
+$_color-steel-blue: #216790 !default;
+$_color-blue-grey: #687498 !default;
+$_color-green-grey: #a39d3d !default;
+$_color-blue-dark: #313745 !default;
+
+$_color-white: #fff !default;
+$_color-grey: #bebebe !default;
+$_color-grey-light: #d8d8d8 !default;
+$_color-grey-dark: #2d3539 !default;
+$_color-black: #1d1d1b !default;
+
+$_color-paywall-grey: #e0dede !default;
+$_color-paywall-grey-light: #f8f7f7 !default;
+$_color-paywall-grey-dark: #757172 !default;
+$_color-paywall-red: #dd4242 !default;
+$_color-paywall-blue: #00d2ff !default;
+
+$_color-brand: $_color-red !default;
+$_color-kiosk: $_color-yellow !default;
+$_color-promo: #979fb8 !default;
+$_color-podcast: $_color-grey-dark !default;
+$_color-links: #2a81b4 !default;
+$_color-backdrop: darken($_color-grey-dark,10%) !default;
+$_color-submenu: darken($_color-grey-dark,5%) !default;
+
+$_color-alter: $_color-blue-dark !default;
+
+$_color-thema: (
+  actualite: $_color-brand,
+  chronique: $_color-brand,
+
+  economie: $_color-purple,
+  conjoncture: $_color-purple,
+  croissance: $_color-purple,
+  budget: $_color-purple,
+  fiscalite: $_color-purple,
+  politiques-publiques: $_color-purple,
+  commerce: $_color-purple,
+  consommation: $_color-purple,
+  mondialisation: $_color-purple,
+  banques: $_color-purple,
+  finance: $_color-purple,
+  monnaie: $_color-purple,
+  politique-monetaire: $_color-purple,
+  services-publics: $_color-purple,
+  dette: $_color-purple,
+  economie-sociale: $_color-purple,
+
+  social: $_color-blue-light,
+  emploi: $_color-blue-light,
+  chomage: $_color-blue-light,
+  assurance-chomage: $_color-blue-light,
+  protection-sociale: $_color-blue-light,
+  retraites: $_color-blue-light,
+  sante: $_color-blue-light,
+  travail: $_color-blue-light,
+  conditions-travail: $_color-blue-light,
+  droit-travail: $_color-blue-light,
+  temps-travail: $_color-blue-light,
+  dialogue-social: $_color-blue-light,
+  salaires: $_color-blue-light,
+  management: $_color-blue-light,
+  formation: $_color-blue-light,
+
+  societe: $_color-jade,
+  education: $_color-jade,
+  logement: $_color-jade,
+  inegalites: $_color-jade,
+  revenus: $_color-jade,
+  genre: $_color-jade,
+  politique: $_color-jade,
+  libertes: $_color-jade,
+  immigration: $_color-jade,
+  territoires: $_color-jade,
+  population: $_color-jade,
+  familles: $_color-jade,
+  refugies: $_color-jade,
+  jeunes: $_color-jade,
+
+  environnement: $_color-green,
+  energie: $_color-green,
+  climat: $_color-green,
+  pollution: $_color-green,
+  biodiversite: $_color-green,
+  agriculture: $_color-green,
+  transport: $_color-green,
+  economie-circulaire: $_color-green,
+
+  entreprise: $_color-orange,
+  industrie: $_color-orange,
+  services: $_color-orange,
+  numerique: $_color-orange,
+  innovation: $_color-orange,
+  high-tech: $_color-orange,
+  commerce-exterieur: $_color-orange,
+  rse: $_color-orange,
+  gestion: $_color-orange,
+
+  international: $_color-blue-grey,
+  europe: $_color-blue-grey,
+  allemagne: $_color-blue-grey,
+  grece: $_color-blue-grey,
+  royaume-uni: $_color-blue-grey,
+  espagne: $_color-blue-grey,
+  etats-unis: $_color-blue-grey,
+  amerique-du-sud: $_color-blue-grey,
+  asie: $_color-blue-grey,
+  chine: $_color-blue-grey,
+  japon: $_color-blue-grey,
+  afrique: $_color-blue-grey,
+  geopolitique: $_color-blue-grey,
+
+  idees-debats: $_color-dark-orchid,
+  histoire: $_color-dark-orchid,
+  recherche: $_color-dark-orchid,
+  tribune: $_color-dark-orchid,
+  livres: $_color-dark-orchid,
+  theorie: $_color-dark-orchid,
+  face-a-face: $_color-dark-orchid,
+
+  agir: $_color-coral,
+  data: $_color-golden,
+  video: $_color-steel-blue,
+  podcast: $_color-grey,
+  grand-format: $_color-grey,
+
+  brand : $_color-brand,
+
+  default: $_color-grey,
+
+  dessin: $_color-pink,
+  en-direct: $_color-grey,
+  mes-favoris: $_color-grey,
+  les-plus-lus: $_color-grey,
+  l-oeil-de: $_color-grey,
+  direct: $_color-grey,
+  newsletter: $_color-grey,
+  agenda: $_color-grey,
+  blog: $_color-grey,
+  publications: $_color-grey,
+  mensuel: $_color-grey,
+  hors-serie: $_color-grey,
+  dae: $_color-grey,
+  eco-po: $_color-grey,
+  dossier: $_color-grey,
+  dictionnaire: $_color-grey,
+  auteur: $_color-grey
+) !default;
+
+$color-messages: (
+  error: darken($_color-brand,6%),
+  status: #2bb324,
+  warning: $_color-orange
+) !default;
+
+$color-body: $_color-grey-light;
+
+// Base
+// ==========================================================================
+
+// Typography
+$_base-font-size: 16px !default;
+$_base-font-line-height: 1.5 !default;
+$_base-font-space: $_base-font-size * $_base-font-line-height !default;
+
+$_font-open-sans: 'Open Sans', sans-serif !default;
+$_font-open-sans-cond: 'Open Sans Condensed', sans-serif !default;
+
+$_base-font-family: $_font-open-sans !default;
+$_base-font-family-condensed: $_font-open-sans-cond !default;
+$_base-font-family-headings: 'Proxima Nova Extra Condensed', $_base-font-family-condensed !default;
+
+$_base-font-color: $_color-black !default;
+
+$_base-font-size-h1: 32px !default;
+$_base-font-size-h2: 30px !default;
+$_base-font-size-h3: 28px !default;
+$_base-font-size-h4: 26px !default;
+$_base-font-size-h5: 24px !default;
+$_base-font-size-h6: 18px !default;
+
+$_base-font-links-color: $_color-brand !default;
+$_base-font-links-color-hover: darken($_base-font-links-color, 5%) !default;
+$_base-font-links-color-focus: darken($_base-font-links-color, 10%) !default;
+$_base-font-links-text-decoration: none;
+
+// Tables
+$_base-tables-padding: $_base-font-space !default;
+$_base-tables-border-width: 1px;
+$_base-tables-border-color: $_color-grey-light;
+
+// GFX
+$_transition-default: all ease .25s !default;
+
+// Layout
+// ==========================================================================
+
+$_layout-space: 10px !default;
+
+// Breakpoints
+$_layout-breakpoints: (
+  smallest: 23.438em,
+  smaller: 25em,
+  small: 40em,
+  medium: 48em,
+  large: 64em,
+  largest: 78em
+) !default;
+
+/*
+23.438em = 375px
+25em = 400px
+40em = 640px
+48em = 768px
+64em = 1024px
+78em = 1250px
+*/
+
+$_layout-columns: (
+  one-quarter: 3,
+  one-third: 4,
+  half: 6,
+  three-quarter: 9,
+  full: 12,
+  two-third: 8
+) !default;
+
+// Grid
+$_layout-grid: (
+  width: 1170px,
+  columns: 12,
+  gutters: 25px,
+  breakpoints: $_layout-breakpoints
+) !default;
+
+// Bootstrap override
+// ==========================================================================
+$grid-breakpoints: (
+  xs: 0,
+  sm: 544px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+$container-max-widths: (
+  sm: 576px,
+  md: 720px,
+  lg: 940px,
+  xl: 1140px
+) !default;
+
+@import './function/strip-unit';
+@import './function/em';
+
+$grid-columns: map-get($_layout-grid, columns);
+$grid-width: map-get($_layout-grid, width);
+$grid-gutter-width: _em(map-get($_layout-grid, gutters));
+
+// COMPONENTS
+
+$_component_height_header: 137px;
+
+// CUSTOM
+
+$_custom_wide_layout_max_width: 1500px;
+$_custom_teaser_min_height: 370px;

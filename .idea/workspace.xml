@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d705c072-5703-4a41-8b1a-0242731cf11d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1RoFBBi1mBdJa7Tn76R5gR3Xyq2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/ReactPlyr" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/Utils" />
+      <recent name="$PROJECT_DIR$/src/Player" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/utils" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/stories" />
+      <recent name="$PROJECT_DIR$/config" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d705c072-5703-4a41-8b1a-0242731cf11d" name="Default Changelist" comment="" />
+      <created>1570325403115</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570325403115</updated>
+      <workItem from="1570325404201" duration="18490000" />
+      <workItem from="1570489690049" duration="19697000" />
+      <workItem from="1570981942215" duration="71287000" />
+      <workItem from="1572704299402" duration="155000" />
+      <workItem from="1572990492362" duration="205000" />
+      <workItem from="1573163823426" duration="2565000" />
+      <workItem from="1573167227433" duration="23000" />
+      <workItem from="1573683689754" duration="1073000" />
+      <workItem from="1575406221109" duration="1764000" />
+      <workItem from="1575416363599" duration="13284000" />
+      <workItem from="1575661038649" duration="2553000" />
+      <workItem from="1575728294986" duration="284000" />
+      <workItem from="1575833332098" duration="722000" />
+      <workItem from="1576538010165" duration="1696000" />
+      <workItem from="1576577711256" duration="920000" />
+      <workItem from="1576611450261" duration="8314000" />
+      <workItem from="1576674286474" duration="38122000" />
+      <workItem from="1577059922152" duration="119762000" />
+      <workItem from="1578702494380" duration="1150000" />
+      <workItem from="1578758386834" duration="87000" />
+      <workItem from="1581818084026" duration="12301000" />
+      <workItem from="1582123883327" duration="22144000" />
+      <workItem from="1592068471882" duration="1582000" />
+      <workItem from="1592165537676" duration="14463000" />
+      <workItem from="1592486786034" duration="28000" />
+      <workItem from="1592497312499" duration="44709000" />
+      <workItem from="1595088310178" duration="3106000" />
+      <workItem from="1601124947275" duration="801000" />
+      <workItem from="1601126216036" duration="50000" />
+      <workItem from="1601126274382" duration="38000" />
+      <workItem from="1601126337036" duration="310000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/node_modules/kleur/index.js" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1245" y="429" width="683" height="486" key="find.popup" timestamp="1593386496312">
+      <screen x="0" y="23" width="2560" height="1346" />
+    </state>
+    <state x="1245" y="429" width="683" height="486" key="find.popup/0.23.2560.1346@0.23.2560.1346" timestamp="1593386496312" />
+    <state x="1486" y="326" key="refactoring.ChangeSignatureDialog" timestamp="1592690475558">
+      <screen x="0" y="23" width="2560" height="1346" />
+    </state>
+    <state x="1486" y="326" key="refactoring.ChangeSignatureDialog/0.23.2560.1346@0.23.2560.1346" timestamp="1592690475558" />
+  </component>
+</project>
