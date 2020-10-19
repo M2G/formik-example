@@ -1,6 +1,9 @@
 /* eslint-disable */
-import * as React from 'react';
+import React, { useState } from 'react';
 import { Formik, Field, Form } from 'formik';
+import CustomSelect from './Select';
+import Checkbox from "./Checkbox";
+
 import {
   ERROR_TEXT_REQUIRED,
   INPUT_NAME,
@@ -10,7 +13,6 @@ import {
   LABEL_PASSWORD,
   LABEL_LANGUAGE,
   LABEL_PROGRAMMING_LANGUAGE,
-  LABEL_DAYS_AVAILABLES,
   PLACEHOLDER_NAME,
   PLACEHOLDER_FIRST_NAME,
   PLACEHOLDER_EMAIL,
@@ -19,12 +21,9 @@ import {
   PLACEHOLDER_PROGRAMMING_LANGUAGE,
   LANGUAGE_OPTION,
   PROGRAMMING_LANGUAGE_OPTION,
+  LABEL_DAYS_AVAILABLES,
   DAYS,
 } from '@constants';
-import { debounce } from './utils';
-import CustomSelect from './Select';
-import Checkbox from "./Checkbox";
-import "./index.scss";
 
 const {
   ERROR_TEXT_REQUIRED_EMAIL,
@@ -42,7 +41,7 @@ export namespace FormNS {
   }
 
   export interface PropsFromDispatch {
-    onSubmit: (form: object) => void;
+    onSubmitValue: (form: object) => void;
   }
 
   export interface State {
@@ -50,29 +49,10 @@ export namespace FormNS {
   }
 }
 
-class FormExample extends React.PureComponent
-  <FormNS.Props & FormNS.PropsFromDispatch & FormNS.State> {
-  state = {
-    results: {},
-  };
-  public constructor(props: Readonly<FormNS.Props>) {
-    // @ts-ignore
-    super(props);
+function FormExample({ onSubmitValue = () => {}, initialValues }: FormNS.Props & FormNS.PropsFromDispatch & FormNS.State) {
+  const [state, setState] = useState({ results: {} });
 
-    this.onValidate = this.onValidate.bind(this);
-    this.onSubmit = this.onSubmit.bind(this);
-    this.onChangeDebounced = this.onChangeDebounced.bind(this);
-    // @ts-ignore
-    this.onChange = debounce(this.onChange.bind(this), 75);
-    this.renderForm = this.renderForm.bind(this);
-  }
-
-  public componentWillUnmount(): void {
-    // @ts-ignore
-    this.onChange.cancel();
-  }
-
-  private onValidate(values: object): object {
+  function onValidate(values: object): object {
     const errors = {};
 
     if (!values[INPUT_NAME.NAME]) {
@@ -91,7 +71,7 @@ class FormExample extends React.PureComponent
       errors[INPUT_NAME.PASSWORD] = ERROR_TEXT_REQUIRED_PASSWORD;
     }
 
-   if (!values[INPUT_NAME.LANGUAGE]?.length) {
+    if (!values[INPUT_NAME.LANGUAGE]?.length) {
       errors[INPUT_NAME.LANGUAGE] = ERROR_TEXT_REQUIRED_LANGUAGE;
     }
 
@@ -103,31 +83,27 @@ class FormExample extends React.PureComponent
       errors[INPUT_NAME.DAYS_AVAILABLES] = ERROR_TEXT_REQUIRED_DAYS_AVAILABLES;
     }
 
+    console.log('onValidate values', values);
+    console.log('onValidate errors', errors);
+
     return errors;
   }
 
-  private onSubmit(values: object): void {
-    const { onSubmit = () => {} } = this.props;
-    onSubmit(values);
-    this.setState({ results: values });
+  function onSubmit(values: object): void {
+    onSubmitValue(values);
+    setState({ results: values });
   }
 
-  private onChange(setFieldValue, setFieldName, value): void {
-    return setFieldValue(setFieldName, value);
-  }
+  function renderForm({
+                       handleSubmit,
+                       setFieldValue,
+                       values,
+                       errors,
+                       touched,
+                     }): JSX.Element {
 
-  private onChangeDebounced(setFieldValue, setFieldName) {
-    return ({ target: { value = '' } }) => this.onChange(setFieldValue, setFieldName, value);
-  }
+    const { results } = state;
 
-  private renderForm({
-    handleSubmit,
-    setFieldValue,
-    values,
-    errors,
-    touched,
-  }){
-    const { results } = this.state;
     console.log('values', values);
     // console.log('result', results);
     return (
@@ -136,17 +112,16 @@ class FormExample extends React.PureComponent
           <div className="c-login">
             <div className="o-grid__row">
               <div className="o-col c-forms">
-                <Form>
+                <Form role="form">
                   <div className="c-forms__item">
                     <label htmlFor="name">{LABEL_NAME}</label>
                     <Field
                       type="text"
                       id="name"
                       name={INPUT_NAME.NAME}
-                      onChange={this.onChangeDebounced(
-                        setFieldValue,
-                        INPUT_NAME.NAME,
-                      )}
+                      onChange={({ target: { value } }) =>
+                        setFieldValue(INPUT_NAME.NAME, value)
+                      }
                       placeholder={PLACEHOLDER_NAME}
                       value={values[INPUT_NAME.NAME]}
                     />
@@ -166,10 +141,9 @@ class FormExample extends React.PureComponent
                       type="text"
                       id="firstname"
                       name={INPUT_NAME.FIRST_NAME}
-                      onChange={this.onChangeDebounced(
-                        setFieldValue,
-                        INPUT_NAME.FIRST_NAME,
-                      )}
+                      onChange={({ target: { value } }) =>
+                        setFieldValue(INPUT_NAME.FIRST_NAME, value)
+                      }
                       placeholder={PLACEHOLDER_FIRST_NAME}
                       value={values[INPUT_NAME.FIRST_NAME]}
                     />
@@ -187,10 +161,9 @@ class FormExample extends React.PureComponent
                       type="email"
                       id="email"
                       name={INPUT_NAME.EMAIL}
-                      onChange={this.onChangeDebounced(
-                        setFieldValue,
-                        INPUT_NAME.EMAIL,
-                      )}
+                      onChange={({ target: { value } }) =>
+                        setFieldValue(INPUT_NAME.EMAIL, value)
+                      }
                       placeholder={PLACEHOLDER_EMAIL}
                       value={values[INPUT_NAME.EMAIL]}
                     />
@@ -208,10 +181,9 @@ class FormExample extends React.PureComponent
                       type="password"
                       id="password"
                       name={INPUT_NAME.PASSWORD}
-                      onChange={this.onChangeDebounced(
-                        setFieldValue,
-                        INPUT_NAME.PASSWORD,
-                      )}
+                      onChange={({ target: { value } }) =>
+                        setFieldValue(INPUT_NAME.PASSWORD, value)
+                      }
                       placeholder={PLACEHOLDER_PASSWORD}
                       value={values[INPUT_NAME.PASSWORD]}
                     />
@@ -224,16 +196,17 @@ class FormExample extends React.PureComponent
                     ) : null}
                   </div>
                   <div className="c-forms__item">
-                    <label htmlFor="language">{LABEL_LANGUAGE}</label>
-                    <Field
-                      className="language"
-                      value={values[INPUT_NAME.LANGUAGE]}
-                      name={INPUT_NAME.LANGUAGE}
-                      placeholder={PLACEHOLDER_LANGUAGE}
-                      options={LANGUAGE_OPTION}
-                      component={CustomSelect}
-                      isSearchable
-                    />
+                    <label htmlFor={INPUT_NAME.LANGUAGE}>{LABEL_LANGUAGE}</label>
+                      <Field
+                        inputId="language"
+                        className="language"
+                        value={values[INPUT_NAME.LANGUAGE]}
+                        name={INPUT_NAME.LANGUAGE}
+                        placeholder={PLACEHOLDER_LANGUAGE}
+                        options={LANGUAGE_OPTION}
+                        component={CustomSelect}
+                        isSearchable
+                      />
                     {touched[INPUT_NAME.LANGUAGE] &&
                     errors &&
                     errors[INPUT_NAME.LANGUAGE] ? (
@@ -243,19 +216,20 @@ class FormExample extends React.PureComponent
                     ) : null}
                   </div>
                   <div className="c-forms__item">
-                    <label htmlFor="programminglang">
+                    <label htmlFor={INPUT_NAME.PROGRAMMING_LANGUAGE}>
                       {LABEL_PROGRAMMING_LANGUAGE}
                     </label>
-                    <Field
-                      className="programminglang"
-                      value={values[INPUT_NAME.PROGRAMMING_LANGUAGE]}
-                      name={INPUT_NAME.PROGRAMMING_LANGUAGE}
-                      placeholder={PLACEHOLDER_PROGRAMMING_LANGUAGE}
-                      options={PROGRAMMING_LANGUAGE_OPTION}
-                      component={CustomSelect}
-                      isSearchable
-                      isMulti
-                    />
+                      <Field
+                          inputId="programming_lang"
+                          className="programminglang"
+                          value={values[INPUT_NAME.PROGRAMMING_LANGUAGE]}
+                          name={INPUT_NAME.PROGRAMMING_LANGUAGE}
+                          placeholder={PLACEHOLDER_PROGRAMMING_LANGUAGE}
+                          options={PROGRAMMING_LANGUAGE_OPTION}
+                          component={CustomSelect}
+                          isSearchable
+                          isMulti
+                        />
                     {touched[INPUT_NAME.PROGRAMMING_LANGUAGE] &&
                     errors &&
                     errors[INPUT_NAME.PROGRAMMING_LANGUAGE] ? (
@@ -272,8 +246,8 @@ class FormExample extends React.PureComponent
                     </div>
                     <div className='group-checkbox'>
                       {DAYS.map(({label, value}) => (
-                        <Checkbox key={value} name={INPUT_NAME.DAYS_AVAILABLES} label={label} value={value} />
-                        ))}
+                        <Checkbox name={INPUT_NAME.DAYS_AVAILABLES} label={label} value={value} />
+                      ))}
                       {touched[INPUT_NAME.DAYS_AVAILABLES] &&
                       errors && errors[INPUT_NAME.DAYS_AVAILABLES] ? (
                         <span className="error-text">
@@ -285,7 +259,9 @@ class FormExample extends React.PureComponent
                     type="submit"
                     className="c-btn"
                     onClick={handleSubmit}
-                  >Submit</button>
+                  >
+                    Submit
+                  </button>
                 </Form>
                 <div data-results>
                   {JSON.stringify(results)}
@@ -296,23 +272,18 @@ class FormExample extends React.PureComponent
         </div>
       </div>
     );
-  };
-
-  public render(): React.ReactElement<{}> {
-    const { initialValues = {} } = this.props;
-    console.log('initialValues', initialValues)
+  }
 
     return (
       <Formik
         enableReinitialize
         initialValues={initialValues}
-        validate={this.onValidate}
-        onSubmit={this.onSubmit}
+        validate={onValidate}
+        onSubmit={onSubmit}
       >
-        {this.renderForm}
+        {renderForm}
       </Formik>
     );
   }
-}
 
 export default FormExample;

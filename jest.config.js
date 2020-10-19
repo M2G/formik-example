@@ -10,7 +10,8 @@ module.exports = {
   ],
   "transform": {
     "^.+\\.(js|jsx)$": "babel-jest",
-    "^.+\\.(tsx|ts)?$": "ts-jest"
+    "^.+\\.(tsx|ts)?$": "ts-jest",
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "<rootDir>/fileTransform.js"
   },
   "transformIgnorePatterns": [
     "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",

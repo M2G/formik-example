@@ -70,8 +70,6 @@ function CustomSelect({
       return null;
     }
 
-    console.log('field?.value', field?.value);
-
     if (options && Array.isArray(field?.value) ||
       options && isString(field?.value)) {
       return isMulti
