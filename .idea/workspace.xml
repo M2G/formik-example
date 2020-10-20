@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d705c072-5703-4a41-8b1a-0242731cf11d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/setupTests.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Checkbox/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Checkbox/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jest.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +115,7 @@
       <workItem from="1601126274382" duration="38000" />
       <workItem from="1601126337036" duration="549000" />
       <workItem from="1601257040928" duration="542000" />
-      <workItem from="1603038007499" duration="11974000" />
+      <workItem from="1603038007499" duration="12094000" />
     </task>
     <servers />
   </component>
@@ -135,29 +135,29 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1472" height="385" key="GridCell.Tab.0.bottom" timestamp="1603160843344">
+    <state width="1472" height="385" key="GridCell.Tab.0.bottom" timestamp="1603160905121">
       <screen x="0" y="23" width="2560" height="1352" />
     </state>
     <state width="1472" height="385" key="GridCell.Tab.0.bottom/0.23.2560.1350@0.23.2560.1350" timestamp="1603153278121" />
-    <state width="1472" height="385" key="GridCell.Tab.0.bottom/0.23.2560.1352@0.23.2560.1352" timestamp="1603160843344" />
+    <state width="1472" height="385" key="GridCell.Tab.0.bottom/0.23.2560.1352@0.23.2560.1352" timestamp="1603160905121" />
     <state width="1472" height="385" key="GridCell.Tab.0.bottom/0.23.2560.1353@0.23.2560.1353" timestamp="1603160684108" />
-    <state width="1472" height="385" key="GridCell.Tab.0.center" timestamp="1603160843343">
+    <state width="1472" height="385" key="GridCell.Tab.0.center" timestamp="1603160905120">
       <screen x="0" y="23" width="2560" height="1352" />
     </state>
     <state width="1472" height="385" key="GridCell.Tab.0.center/0.23.2560.1350@0.23.2560.1350" timestamp="1603153278120" />
-    <state width="1472" height="385" key="GridCell.Tab.0.center/0.23.2560.1352@0.23.2560.1352" timestamp="1603160843343" />
+    <state width="1472" height="385" key="GridCell.Tab.0.center/0.23.2560.1352@0.23.2560.1352" timestamp="1603160905120" />
     <state width="1472" height="385" key="GridCell.Tab.0.center/0.23.2560.1353@0.23.2560.1353" timestamp="1603160684107" />
-    <state width="1472" height="385" key="GridCell.Tab.0.left" timestamp="1603160843343">
+    <state width="1472" height="385" key="GridCell.Tab.0.left" timestamp="1603160905120">
       <screen x="0" y="23" width="2560" height="1352" />
     </state>
     <state width="1472" height="385" key="GridCell.Tab.0.left/0.23.2560.1350@0.23.2560.1350" timestamp="1603153278120" />
-    <state width="1472" height="385" key="GridCell.Tab.0.left/0.23.2560.1352@0.23.2560.1352" timestamp="1603160843343" />
+    <state width="1472" height="385" key="GridCell.Tab.0.left/0.23.2560.1352@0.23.2560.1352" timestamp="1603160905120" />
     <state width="1472" height="385" key="GridCell.Tab.0.left/0.23.2560.1353@0.23.2560.1353" timestamp="1603160684107" />
-    <state width="1472" height="385" key="GridCell.Tab.0.right" timestamp="1603160843344">
+    <state width="1472" height="385" key="GridCell.Tab.0.right" timestamp="1603160905121">
       <screen x="0" y="23" width="2560" height="1352" />
     </state>
     <state width="1472" height="385" key="GridCell.Tab.0.right/0.23.2560.1350@0.23.2560.1350" timestamp="1603153278121" />
-    <state width="1472" height="385" key="GridCell.Tab.0.right/0.23.2560.1352@0.23.2560.1352" timestamp="1603160843344" />
+    <state width="1472" height="385" key="GridCell.Tab.0.right/0.23.2560.1352@0.23.2560.1352" timestamp="1603160905121" />
     <state width="1472" height="385" key="GridCell.Tab.0.right/0.23.2560.1353@0.23.2560.1353" timestamp="1603160684108" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">

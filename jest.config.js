@@ -33,12 +33,13 @@ module.exports = {
     "node"
   ],
   "testPathIgnorePatterns": [
-    "<rootDir>/(build|node_modules)/"
+    "<rootDir>/(build|node_modules)/",
   ],
   "testEnvironment": "jest-environment-jsdom-sixteen",
 
   // Setup Enzyme
   "snapshotSerializers": ["enzyme-to-json/serializer"],
+
   "setupFilesAfterEnv": [
     "<rootDir>/setupEnzyme.ts",
     "<rootDir>/src/setupTests.ts"
