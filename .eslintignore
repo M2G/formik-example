@@ -1,8 +1,10 @@
 /node_modules
 /dist
 /build
-/config
 /src/serviceWorker.ts
-/src/defaultProps.ts
-/src/types.ts
-/stories
+/config
+/jest.config.js
+/babel.config.js
+/fileTransform.js
+/postcss.config.js
+/setupEnzyme.ts

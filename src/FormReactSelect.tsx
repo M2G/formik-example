@@ -49,8 +49,8 @@ export namespace FormNS {
   }
 }
 
-function FormExample({ onSubmitValue = () => {}, initialValues }: FormNS.Props & FormNS.PropsFromDispatch & FormNS.State) {
-  const [state, setState] = useState({ results: {} });
+function FormExample({ onSubmitValue, initialValues }: FormNS.Props & FormNS.PropsFromDispatch) {
+  const [state, setState] = useState<FormNS.State>({ results: {} });
 
   function onValidate(values: object): object {
     const errors = {};
@@ -246,7 +246,7 @@ function FormExample({ onSubmitValue = () => {}, initialValues }: FormNS.Props &
                     </div>
                     <div className='group-checkbox'>
                       {DAYS.map(({label, value}) => (
-                        <Checkbox name={INPUT_NAME.DAYS_AVAILABLES} label={label} value={value} />
+                        <Checkbox key={value} name={INPUT_NAME.DAYS_AVAILABLES} label={label} value={value} />
                       ))}
                       {touched[INPUT_NAME.DAYS_AVAILABLES] &&
                       errors && errors[INPUT_NAME.DAYS_AVAILABLES] ? (

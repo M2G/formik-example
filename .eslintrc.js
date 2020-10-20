@@ -25,7 +25,8 @@ module.exports = {
     "plugin:import/typescript",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/all",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking"
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:react-hooks/recommended"
   ],
   parserOptions: {
     project: path.resolve(__dirname, './tsconfig.json'),
@@ -38,7 +39,7 @@ module.exports = {
     },
     useJSXTextNode: true
   },
-  plugins: ["react", "@typescript-eslint", "jest", "prettier", "jsx-a11y"],
+  plugins: ["react", "react-hooks", "@typescript-eslint", "jest", "prettier", "jsx-a11y"],
   rules: {
     "no-return-assign": 0,
     "no-restricted-syntax": 0,

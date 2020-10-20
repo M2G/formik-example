@@ -1,8 +1,9 @@
 /* eslint-disable */
-import * as React from 'react';
+import React from 'react';
+import PropTypes from "prop-types";
 import { Field } from 'formik';
 import './index.scss';
-import * as PropTypes from "prop-types";
+
 
 export namespace OptionNS {
   export interface Option {
@@ -16,7 +17,7 @@ function Checkbox(props: OptionNS.Option) {
   return (
     <Field name={props?.name}>
       {({ field, form }) => {
-        function isChecked() {
+        function isChecked(): any {
           return Array.isArray(field?.value) ? field?.value?.includes(props?.value) : [];
         }
 
@@ -24,7 +25,7 @@ function Checkbox(props: OptionNS.Option) {
           return form?.setFieldValue(props?.name, nextValue);
         }
 
-        function onChange(){
+        function onChange(): Function {
           if (isChecked()) {
             const nextValue = field?.value?.filter(
               value => value !== props?.value,

@@ -2,14 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d705c072-5703-4a41-8b1a-0242731cf11d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/custom.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileTransform.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.balbelrc" beforeDir="false" afterPath="$PROJECT_DIR$/.balbelrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintignore" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jest.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setupEnzyme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/setupEnzyme.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Checkbox/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Checkbox/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FormReactSelect.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/FormReactSelect.test.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FormReactSelect.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/FormReactSelect.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FormReactSelect2.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/FormReactSelect.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FormReactSelect2.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Select/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Select/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +41,7 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -42,6 +51,13 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/utils" />
+      <recent name="$PROJECT_DIR$/stories" />
+      <recent name="$PROJECT_DIR$/config" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/ReactPlyr" />
@@ -49,13 +65,26 @@
       <recent name="$PROJECT_DIR$/src/Utils" />
       <recent name="$PROJECT_DIR$/src/Player" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/utils" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/stories" />
-      <recent name="$PROJECT_DIR$/config" />
-    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="submits correct values" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/FormReactSelect.test.tsx" />
+      <test-names>
+        <test-name value="submits correct values" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.submits correct values" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -100,7 +129,7 @@
       <workItem from="1601126274382" duration="38000" />
       <workItem from="1601126337036" duration="549000" />
       <workItem from="1601257040928" duration="542000" />
-      <workItem from="1603038007499" duration="3264000" />
+      <workItem from="1603038007499" duration="11762000" />
     </task>
     <servers />
   </component>
@@ -120,13 +149,32 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1245" y="429" width="683" height="486" key="find.popup" timestamp="1593386496312">
-      <screen x="0" y="23" width="2560" height="1346" />
+    <state width="1472" height="385" key="GridCell.Tab.0.bottom" timestamp="1603160529314">
+      <screen x="0" y="23" width="2560" height="1353" />
     </state>
-    <state x="1245" y="429" width="683" height="486" key="find.popup/0.23.2560.1346@0.23.2560.1346" timestamp="1593386496312" />
-    <state x="1486" y="326" key="refactoring.ChangeSignatureDialog" timestamp="1592690475558">
-      <screen x="0" y="23" width="2560" height="1346" />
+    <state width="1472" height="385" key="GridCell.Tab.0.bottom/0.23.2560.1350@0.23.2560.1350" timestamp="1603153278121" />
+    <state width="1472" height="385" key="GridCell.Tab.0.bottom/0.23.2560.1352@0.23.2560.1352" timestamp="1603158217053" />
+    <state width="1472" height="385" key="GridCell.Tab.0.bottom/0.23.2560.1353@0.23.2560.1353" timestamp="1603160529314" />
+    <state width="1472" height="385" key="GridCell.Tab.0.center" timestamp="1603160529313">
+      <screen x="0" y="23" width="2560" height="1353" />
     </state>
-    <state x="1486" y="326" key="refactoring.ChangeSignatureDialog/0.23.2560.1346@0.23.2560.1346" timestamp="1592690475558" />
+    <state width="1472" height="385" key="GridCell.Tab.0.center/0.23.2560.1350@0.23.2560.1350" timestamp="1603153278120" />
+    <state width="1472" height="385" key="GridCell.Tab.0.center/0.23.2560.1352@0.23.2560.1352" timestamp="1603158217052" />
+    <state width="1472" height="385" key="GridCell.Tab.0.center/0.23.2560.1353@0.23.2560.1353" timestamp="1603160529313" />
+    <state width="1472" height="385" key="GridCell.Tab.0.left" timestamp="1603160529312">
+      <screen x="0" y="23" width="2560" height="1353" />
+    </state>
+    <state width="1472" height="385" key="GridCell.Tab.0.left/0.23.2560.1350@0.23.2560.1350" timestamp="1603153278120" />
+    <state width="1472" height="385" key="GridCell.Tab.0.left/0.23.2560.1352@0.23.2560.1352" timestamp="1603158217051" />
+    <state width="1472" height="385" key="GridCell.Tab.0.left/0.23.2560.1353@0.23.2560.1353" timestamp="1603160529312" />
+    <state width="1472" height="385" key="GridCell.Tab.0.right" timestamp="1603160529314">
+      <screen x="0" y="23" width="2560" height="1353" />
+    </state>
+    <state width="1472" height="385" key="GridCell.Tab.0.right/0.23.2560.1350@0.23.2560.1350" timestamp="1603153278121" />
+    <state width="1472" height="385" key="GridCell.Tab.0.right/0.23.2560.1352@0.23.2560.1352" timestamp="1603158217052" />
+    <state width="1472" height="385" key="GridCell.Tab.0.right/0.23.2560.1353@0.23.2560.1353" timestamp="1603160529314" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/formik_example$submits_correct_values.info" NAME="submits correct values Coverage Results" MODIFIED="1603160540989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

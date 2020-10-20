@@ -3,28 +3,29 @@ import '@testing-library/jest-dom';
 import * as React from 'react';
 import { render, fireEvent, waitFor } from "@testing-library/react";
 import selectEvent from 'react-select-event'
-import FormExample from './FormReactSelect2';
+import FormExample from './FormReactSelect';
 import { INPUT_NAME } from '@constants';
 import { INITIAL_VALUES } from '@constants';
 
 
 it("submits correct values", async () => {
+
   const { container, getByRole, getByLabelText, getByTestId } = render(
     <FormExample
       initialValues={INITIAL_VALUES}
-      onSubmit={(data => console.log(data))}
+      // @ts-ignore
+      onSubmitValue={(data => console.log(data))}
   />);
 
-  const name = container.querySelector(`input[name="${INPUT_NAME.NAME}"]`);
-  const firstName = container.querySelector(`input[name="${INPUT_NAME.FIRST_NAME}"]`);
-  const email = container.querySelector(`input[name="${INPUT_NAME.EMAIL}"]`);
-  const password = container.querySelector(`input[name="${INPUT_NAME.PASSWORD}"]`);
-  const checkbox = container.querySelectorAll(`input[name="${INPUT_NAME.DAYS_AVAILABLES}"]`);
-  const submit = container.querySelector('button[type="submit"]');
-  const results = container.querySelector("[data-results]");
+  const name: any = container.querySelector(`input[name="${INPUT_NAME.NAME}"]`);
+  const firstName: any = container.querySelector(`input[name="${INPUT_NAME.FIRST_NAME}"]`);
+  const email: any = container.querySelector(`input[name="${INPUT_NAME.EMAIL}"]`);
+  const password: any = container.querySelector(`input[name="${INPUT_NAME.PASSWORD}"]`);
+  const checkbox: any = container.querySelectorAll(`input[name="${INPUT_NAME.DAYS_AVAILABLES}"]`);
+  const submit: any = container.querySelector('button[type="submit"]');
+  const results: any = container.querySelector("[data-results]");
 
   await waitFor(() => {
-    // @ts-ignore
     return fireEvent.change(name, {
       target: {
         value: "mockname"
@@ -33,7 +34,6 @@ it("submits correct values", async () => {
   });
 
   await waitFor(() => {
-    // @ts-ignore
     return fireEvent.change(firstName, {
       target: {
         value: "firstname"
@@ -42,7 +42,6 @@ it("submits correct values", async () => {
   });
 
   await waitFor(() => {
-    // @ts-ignore
     return fireEvent.change(email, {
       target: {
         value: "mock@email.com"
@@ -51,7 +50,6 @@ it("submits correct values", async () => {
   });
 
   await waitFor(() => {
-    // @ts-ignore
     return fireEvent.change(password, {
       target: {
         value: "secret"

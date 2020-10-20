@@ -95,9 +95,11 @@ function CustomSelect({
       isSearchable={isSearchable}
       menuIsOpen={isMulti ? open : undefined}
       name={field?.name}
+      //@ts-ignore
       onBlur={() => setState({ open: false })}
       onBlurResetsInput={false}
       onChange={val => onChange(val)}
+      //@ts-ignore
       onFocus={() => setState({ open: true })}
       onInputChange={isMulti && isSearchable ? handleInputChange : undefined}
       options={options}
