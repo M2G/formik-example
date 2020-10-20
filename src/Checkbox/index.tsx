@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 import { Field } from 'formik';
 import './index.scss';
 
-
 export namespace OptionNS {
   export interface Option {
     label: string;
