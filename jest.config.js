@@ -39,5 +39,18 @@ module.exports = {
 
   // Setup Enzyme
   "snapshotSerializers": ["enzyme-to-json/serializer"],
-  "setupFilesAfterEnv": ["<rootDir>/setupEnzyme.ts"],
+  "setupFilesAfterEnv": [
+    "<rootDir>/setupEnzyme.ts",
+    "<rootDir>/src/setupTests.ts"
+  ],
+  "collectCoverageFrom": [
+    "src/**/*.{js,jsx,ts,tsx}",
+    "!src/**/*.d.ts",
+    "!<rootDir>/src/serviceWorker.ts",
+    "!<rootDir>/src/utils/*.ts",
+    "!<rootDir>/src/App.tsx",
+    "!<rootDir>/src/index.tsx",
+    "!<rootDir>/src/**/index.ts",
+    "!<rootDir>/src/**/**/index.ts",
+  ],
 };

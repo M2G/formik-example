@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d705c072-5703-4a41-8b1a-0242731cf11d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/custom.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fileTransform.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.balbelrc" beforeDir="false" afterPath="$PROJECT_DIR$/.balbelrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintignore" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setupEnzyme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/setupEnzyme.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Checkbox/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Checkbox/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FormReactSelect.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/FormReactSelect.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FormReactSelect.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/FormReactSelect.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Select/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Select/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jest.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +115,7 @@
       <workItem from="1601126274382" duration="38000" />
       <workItem from="1601126337036" duration="549000" />
       <workItem from="1601257040928" duration="542000" />
-      <workItem from="1603038007499" duration="11762000" />
+      <workItem from="1603038007499" duration="11893000" />
     </task>
     <servers />
   </component>
@@ -149,30 +135,30 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1472" height="385" key="GridCell.Tab.0.bottom" timestamp="1603160529314">
+    <state width="1472" height="385" key="GridCell.Tab.0.bottom" timestamp="1603160684108">
       <screen x="0" y="23" width="2560" height="1353" />
     </state>
     <state width="1472" height="385" key="GridCell.Tab.0.bottom/0.23.2560.1350@0.23.2560.1350" timestamp="1603153278121" />
     <state width="1472" height="385" key="GridCell.Tab.0.bottom/0.23.2560.1352@0.23.2560.1352" timestamp="1603158217053" />
-    <state width="1472" height="385" key="GridCell.Tab.0.bottom/0.23.2560.1353@0.23.2560.1353" timestamp="1603160529314" />
-    <state width="1472" height="385" key="GridCell.Tab.0.center" timestamp="1603160529313">
+    <state width="1472" height="385" key="GridCell.Tab.0.bottom/0.23.2560.1353@0.23.2560.1353" timestamp="1603160684108" />
+    <state width="1472" height="385" key="GridCell.Tab.0.center" timestamp="1603160684107">
       <screen x="0" y="23" width="2560" height="1353" />
     </state>
     <state width="1472" height="385" key="GridCell.Tab.0.center/0.23.2560.1350@0.23.2560.1350" timestamp="1603153278120" />
     <state width="1472" height="385" key="GridCell.Tab.0.center/0.23.2560.1352@0.23.2560.1352" timestamp="1603158217052" />
-    <state width="1472" height="385" key="GridCell.Tab.0.center/0.23.2560.1353@0.23.2560.1353" timestamp="1603160529313" />
-    <state width="1472" height="385" key="GridCell.Tab.0.left" timestamp="1603160529312">
+    <state width="1472" height="385" key="GridCell.Tab.0.center/0.23.2560.1353@0.23.2560.1353" timestamp="1603160684107" />
+    <state width="1472" height="385" key="GridCell.Tab.0.left" timestamp="1603160684107">
       <screen x="0" y="23" width="2560" height="1353" />
     </state>
     <state width="1472" height="385" key="GridCell.Tab.0.left/0.23.2560.1350@0.23.2560.1350" timestamp="1603153278120" />
     <state width="1472" height="385" key="GridCell.Tab.0.left/0.23.2560.1352@0.23.2560.1352" timestamp="1603158217051" />
-    <state width="1472" height="385" key="GridCell.Tab.0.left/0.23.2560.1353@0.23.2560.1353" timestamp="1603160529312" />
-    <state width="1472" height="385" key="GridCell.Tab.0.right" timestamp="1603160529314">
+    <state width="1472" height="385" key="GridCell.Tab.0.left/0.23.2560.1353@0.23.2560.1353" timestamp="1603160684107" />
+    <state width="1472" height="385" key="GridCell.Tab.0.right" timestamp="1603160684108">
       <screen x="0" y="23" width="2560" height="1353" />
     </state>
     <state width="1472" height="385" key="GridCell.Tab.0.right/0.23.2560.1350@0.23.2560.1350" timestamp="1603153278121" />
     <state width="1472" height="385" key="GridCell.Tab.0.right/0.23.2560.1352@0.23.2560.1352" timestamp="1603158217052" />
-    <state width="1472" height="385" key="GridCell.Tab.0.right/0.23.2560.1353@0.23.2560.1353" timestamp="1603160529314" />
+    <state width="1472" height="385" key="GridCell.Tab.0.right/0.23.2560.1353@0.23.2560.1353" timestamp="1603160684108" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/formik_example$submits_correct_values.info" NAME="submits correct values Coverage Results" MODIFIED="1603160540989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
