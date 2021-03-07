@@ -1,9 +1,9 @@
 /* eslint-disable */
-import * as React from 'react';
-import * as PropTypes from 'prop-types';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { FieldProps } from 'formik';
 import Select, { OptionsType, ValueType } from 'react-select';
-import { isString } from '@utils';
+import { isString } from '../utils';
 
 const actionInputChange = 'input-change';
 

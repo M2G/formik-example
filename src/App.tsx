@@ -1,6 +1,6 @@
 /* eslint-disable */
-import * as React from 'react';
-import { INITIAL_VALUES } from '@constants';
+import React from 'react';
+import { INITIAL_VALUES } from './constants';
 import FormReactSelect from './FormReactSelect';
 
 function App() {

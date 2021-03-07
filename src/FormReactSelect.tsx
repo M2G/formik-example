@@ -23,7 +23,7 @@ import {
   PROGRAMMING_LANGUAGE_OPTION,
   LABEL_DAYS_AVAILABLES,
   DAYS,
-} from '@constants';
+} from './constants';
 
 const {
   ERROR_TEXT_REQUIRED_EMAIL,

@@ -1,11 +1,11 @@
 /* eslint-disable */
 import '@testing-library/jest-dom';
-import * as React from 'react';
+import React from 'react';
 import { render, fireEvent, waitFor } from "@testing-library/react";
 import selectEvent from 'react-select-event'
 import FormExample from './FormReactSelect';
-import { INPUT_NAME } from '@constants';
-import { INITIAL_VALUES } from '@constants';
+import { INPUT_NAME } from './constants';
+import { INITIAL_VALUES } from './constants';
 
 
 it("submits correct values", async () => {

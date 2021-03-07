@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { INITIAL_VALUES } from '@constants';
+import { INITIAL_VALUES } from './constants';
 import FormReactSelect from './FormReactSelect';
 
 it('renders without crashing', () => {
